@@ -5,6 +5,8 @@ min_version = "v1.12.1"
 type = 'workspace'
 projects_root_path = 'projects'
 
-[generate.devcontainer]
-description = "Generate a default 'devcontainer.json' configuration that pre-installs algokit and launches Algorand sandbox as part of codespace container provisioning."
-path = ".algokit/generators/create-devcontainer"
+[deploy.TestNet]
+command = "goal app create --creator $DEPLOYER_ACCOUNT --approval-prog smart_contracts/hello_world/helloworld.teal --clear-prog smart_contracts/hello_world/helloworld.teal --global-byteslices 1 --global-ints 1 --local-byteslices 0 --local-ints 0 --network TestNet -d /opt/data"
+
+[deploy]
+command = "goal app create --creator $DEPLOYER_ACCOUNT --approval-prog smart_contracts/hello_world/helloworld.teal --clear-prog smart_contracts/hello_world/helloworld.teal --global-byteslices 1 --global-ints 1 --local-byteslices 0 --local-ints 0 -d /opt/data"

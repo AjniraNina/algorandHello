@@ -1,0 +1,7 @@
+ALGOD_URL="https://testnet-api.algonode.cloud"
+ALGOD_PORT=443
+INDEXER_URL="https://testnet-idx.algonode.cloud"
+INDEXER_PORT=443
+ALGOD_TOKEN=""
+INDEXER_TOKEN=""
+DEPLOYER_MNEMONIC="gospel silk body better orange ivory rose clean uphold gate captain pupil upon age combine need drama onion powder decline muscle auction cupboard about onion"
